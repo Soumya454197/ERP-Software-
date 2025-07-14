@@ -1,4 +1,4 @@
-## ERP Solutions Platform
+# 🏭 IndustryHub - ERP Solutions Platform
 
 A comprehensive Enterprise Resource Planning (ERP) platform with AI-powered assistance, supporting multiple industries with tailored modules and intelligent chat capabilities.
 
@@ -13,7 +13,8 @@ A comprehensive Enterprise Resource Planning (ERP) platform with AI-powered assi
 - **Textile** - Production planning, workforce management, supply chain
 
 ### 🤖 **AI-Powered Chat Assistant**
-
+- **Instant Responses** - Cached responses for common questions (< 100ms)
+- **Structured Formatting** - Consistent, professional response format
 - **Website-Aware** - AI has access to all platform content and data
 - **Multi-Interface** - Chat widget + standalone chat pages
 - **Speed Optimized** - 15-second max response time with fallbacks

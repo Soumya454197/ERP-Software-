@@ -1,0 +1,101 @@
+# IndustryHub ERP Platform - Dependencies
+# Multi-language project with Python AI backend and Node.js auth backend
+
+# =============================================================================
+# PYTHON DEPENDENCIES (AI Chat Backend)
+# =============================================================================
+# Install with: pip install -r chat_backend/requirements.txt
+# Or create virtual environment:
+#   python -m venv chat_env
+#   source chat_env/bin/activate  # Windows: chat_env\Scripts\activate
+#   pip install -r chat_backend/requirements.txt
+
+# Core FastAPI framework
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# LangChain for AI and document processing
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.5
+langchain-chroma==0.1.0
+
+# Document processing
+pypdf==3.17.4
+python-multipart==0.0.6
+unstructured==0.11.8
+python-docx==1.1.0
+openpyxl==3.1.2
+
+# Vector database
+chromadb==0.4.18
+
+# Web search (optional)
+tavily-python==0.3.3
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Additional utilities
+pydantic==2.5.0
+aiofiles==23.2.1
+
+# Website content processing
+beautifulsoup4==4.12.2
+pandas==2.1.4
+lxml==4.9.3
+
+# =============================================================================
+# NODE.JS DEPENDENCIES (Authentication Backend)
+# =============================================================================
+# Install with: cd login-backend && npm install
+
+# Core Express.js framework
+express@^5.1.0
+
+# Cross-Origin Resource Sharing middleware
+cors@^2.8.5
+
+# Body parsing middleware
+body-parser@^2.2.0
+
+# Password hashing library
+bcryptjs@^3.0.2
+
+# JSON Web Token implementation
+jsonwebtoken@^9.0.2
+
+# Google OAuth authentication library
+google-auth-library@^9.0.0
+
+# Environment variables loader
+dotenv@^17.2.0
+
+# Development Dependencies (optional)
+# nodemon@^3.0.0  # Auto-restart server during development
+
+# =============================================================================
+# ENVIRONMENT VARIABLES REQUIRED
+# =============================================================================
+# Create .env file in chat_backend/ directory with:
+# DEEPSEEK_API_KEY=your_deepseek_api_key_here
+# TAVILY_API_KEY=your_tavily_api_key_here (optional for web search)
+# DEEPSEEK_TIMEOUT=15
+# DEEPSEEK_MAX_RETRIES=1
+
+# =============================================================================
+# QUICK START COMMANDS
+# =============================================================================
+# 1. Setup Python backend:
+#    cd chat_backend
+#    python -m venv venv
+#    source venv/bin/activate  # Windows: venv\Scripts\activate
+#    pip install -r requirements.txt
+#    python app.py
+#
+# 2. Setup Node.js backend (optional):
+#    cd login-backend
+#    npm install
+#    npm start
+#
+# 3. Open home/home.html in browser to start using the platform

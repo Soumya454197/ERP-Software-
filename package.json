@@ -1,0 +1,44 @@
+{
+  "name": "industryhub-erp-platform",
+  "version": "1.0.0",
+  "description": "Enterprise Resource Planning platform with AI-powered assistance for multiple industries",
+  "main": "home/home.html",
+  "scripts": {
+    "start": "echo 'Open home/home.html in your browser to start the platform'",
+    "setup": "python setup.py",
+    "start-ai": "cd chat_backend && python app.py",
+    "start-auth": "cd login-backend && npm start",
+    "install-all": "cd login-backend && npm install",
+    "test": "echo 'No tests specified yet'"
+  },
+  "keywords": [
+    "erp",
+    "enterprise",
+    "manufacturing",
+    "healthcare",
+    "retail",
+    "ai",
+    "chatbot",
+    "fastapi",
+    "langchain"
+  ],
+  "author": "IndustryHub Team",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "google-auth-library": "^10.1.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0",
+    "python": ">=3.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/industryhub-erp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/industryhub-erp/issues"
+  },
+  "homepage": "https://github.com/your-username/industryhub-erp#readme"
+}
